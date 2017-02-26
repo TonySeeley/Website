@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="6"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	title="Family Pictures (Aimee Scans)"
+	showDownloadButton="true"
+	showNavButtons="true"
+	showAutoPlayButton="true"
+	showBackButton="true"
+	backButtonURL="/Gallery/Gallery.html"
+
+>
+  <image imageURL="images/Image001.jpg"
+	thumbURL="thumbs/Image001.jpg"
+	linkURL="images/Image001.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image002.jpg"
+	thumbURL="thumbs/Image002.jpg"
+	linkURL="images/Image002.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image003.jpg"
+	thumbURL="thumbs/Image003.jpg"
+	linkURL="images/Image003.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image004.jpg"
+	thumbURL="thumbs/Image004.jpg"
+	linkURL="images/Image004.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image005.jpg"
+	thumbURL="thumbs/Image005.jpg"
+	linkURL="images/Image005.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image006.jpg"
+	thumbURL="thumbs/Image006.jpg"
+	linkURL="images/Image006.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image007.jpg"
+	thumbURL="thumbs/Image007.jpg"
+	linkURL="images/Image007.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image008.jpg"
+	thumbURL="thumbs/Image008.jpg"
+	linkURL="images/Image008.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image009.jpg"
+	thumbURL="thumbs/Image009.jpg"
+	linkURL="images/Image009.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image010.jpg"
+	thumbURL="thumbs/Image010.jpg"
+	linkURL="images/Image010.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image011.jpg"
+	thumbURL="thumbs/Image011.jpg"
+	linkURL="images/Image011.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image012.jpg"
+	thumbURL="thumbs/Image012.jpg"
+	linkURL="images/Image012.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image013.jpg"
+	thumbURL="thumbs/Image013.jpg"
+	linkURL="images/Image013.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image014.jpg"
+	thumbURL="thumbs/Image014.jpg"
+	linkURL="images/Image014.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image015.jpg"
+	thumbURL="thumbs/Image015.jpg"
+	linkURL="images/Image015.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image016.jpg"
+	thumbURL="thumbs/Image016.jpg"
+	linkURL="images/Image016.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image017.jpg"
+	thumbURL="thumbs/Image017.jpg"
+	linkURL="images/Image017.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image018.jpg"
+	thumbURL="thumbs/Image018.jpg"
+	linkURL="images/Image018.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image019.jpg"
+	thumbURL="thumbs/Image019.jpg"
+	linkURL="images/Image019.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image020.jpg"
+	thumbURL="thumbs/Image020.jpg"
+	linkURL="images/Image020.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image021.jpg"
+	thumbURL="thumbs/Image021.jpg"
+	linkURL="images/Image021.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image022.jpg"
+	thumbURL="thumbs/Image022.jpg"
+	linkURL="images/Image022.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image023.jpg"
+	thumbURL="thumbs/Image023.jpg"
+	linkURL="images/Image023.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image024.jpg"
+	thumbURL="thumbs/Image024.jpg"
+	linkURL="images/Image024.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image025.jpg"
+	thumbURL="thumbs/Image025.jpg"
+	linkURL="images/Image025.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image026.jpg"
+	thumbURL="thumbs/Image026.jpg"
+	linkURL="images/Image026.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image027.jpg"
+	thumbURL="thumbs/Image027.jpg"
+	linkURL="images/Image027.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image028.jpg"
+	thumbURL="thumbs/Image028.jpg"
+	linkURL="images/Image028.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image029.jpg"
+	thumbURL="thumbs/Image029.jpg"
+	linkURL="images/Image029.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image030.jpg"
+	thumbURL="thumbs/Image030.jpg"
+	linkURL="images/Image030.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image031.jpg"
+	thumbURL="thumbs/Image031.jpg"
+	linkURL="images/Image031.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image032.jpg"
+	thumbURL="thumbs/Image032.jpg"
+	linkURL="images/Image032.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image033.jpg"
+	thumbURL="thumbs/Image033.jpg"
+	linkURL="images/Image033.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image034.jpg"
+	thumbURL="thumbs/Image034.jpg"
+	linkURL="images/Image034.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image035.jpg"
+	thumbURL="thumbs/Image035.jpg"
+	linkURL="images/Image035.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image036.jpg"
+	thumbURL="thumbs/Image036.jpg"
+	linkURL="images/Image036.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image037.jpg"
+	thumbURL="thumbs/Image037.jpg"
+	linkURL="images/Image037.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image038.jpg"
+	thumbURL="thumbs/Image038.jpg"
+	linkURL="images/Image038.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image039.jpg"
+	thumbURL="thumbs/Image039.jpg"
+	linkURL="images/Image039.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image040.jpg"
+	thumbURL="thumbs/Image040.jpg"
+	linkURL="images/Image040.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image041.jpg"
+	thumbURL="thumbs/Image041.jpg"
+	linkURL="images/Image041.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image042.jpg"
+	thumbURL="thumbs/Image042.jpg"
+	linkURL="images/Image042.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image043.jpg"
+	thumbURL="thumbs/Image043.jpg"
+	linkURL="images/Image043.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image044.jpg"
+	thumbURL="thumbs/Image044.jpg"
+	linkURL="images/Image044.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../styles.css" media="all" />
+	<script type="text/javascript" src="./../menu.js"></script>
+	<script type="text/javascript">
+		var currentImage;
+		var maxImage;
+		var directory;
+
+		function pageLoad()
+		{
+			maxImage = 12;
+			directory = "Calander";
+
+			var Selector = '<select id="imgDDL" onChange="javascript:ChangeImage('+"'none'"+');">';
+			for (var i=1; i<=maxImage; i++)
+			{
+				Selector += '<option value="'+i.toString()+'" >Picture '+i.toString()+' of '+maxImage.toString();
+			}
+			Selector += '<' + '/select>';
+			document.getElementById("imgControl").innerHTML = Selector;
+
+			currentImage = 1;
+			ChangeImage("--");
+		}
+
+		function ChangeImage(param)
+		{
+			switch (param)
+			{
+				case "+":
+					currentImage++;
+					if (currentImage>maxImage)
+						currentImage=1;
+					break;
+				case "-":
+					currentImage--;
+					if (currentImage==0)
+						currentImage=maxImage;
+					break;
+				case "++":
+					currentImage=maxImage;
+					break;
+				case "--":
+					currentImage=1;
+					break;
+			}
+
+			if (param=="none")
+				currentImage = parseInt(document.getElementById("imgDDL").value, 10);
+			else
+				document.getElementById("imgDDL").value = currentImage.toString();
+
+			document.getElementById("IMG1").src=directory+"/RealImage"+currentImage.toString()+".jpg";
+			document.getElementById("IMG2").src=directory+"/FakeImage"+currentImage.toString()+".jpg";
+
+			switch (currentImage)
+			{
+				case 1:
+					document.getElementById("imgDetail").innerHTML="January";
+					break;
+				case 2:
+					document.getElementById("imgDetail").innerHTML="February";
+					break;
+				case 3:
+					document.getElementById("imgDetail").innerHTML="March";
+					break;
+				case 4:
+					document.getElementById("imgDetail").innerHTML="April";
+					break;
+				case 5:
+					document.getElementById("imgDetail").innerHTML="May";
+					break;
+				case 6:
+					document.getElementById("imgDetail").innerHTML="June";
+					break;
+				case 7:
+					document.getElementById("imgDetail").innerHTML="July";
+					break;
+				case 8:
+					document.getElementById("imgDetail").innerHTML="August";
+					break;
+				case 9:
+					document.getElementById("imgDetail").innerHTML="September";
+					break;
+				case 10:
+					document.getElementById("imgDetail").innerHTML="October";
+					break;
+				case 11:
+					document.getElementById("imgDetail").innerHTML="November";
+					break;
+				case 12:
+					document.getElementById("imgDetail").innerHTML="December";
+					break;
+			}
+		}
+	</script>
+</head>
+<body onload="pageLoad();">
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../menu.html"-->
+		</div>
+		<div class="sidebarContainer">
+			<h1 class="sideHeader">Favorite Pictures</h1>
+			<span style="font:12px Verdana, serif; color:#0000F1;">
+				<u><a href="./JamesAbi10.html">James & Abi 2010</a></u><br />
+				<u><a href="./JamesAbi09.html">James & Abi 2009</a></u><br />
+				<u><a href="./JamesAbi.html">James & Abi 2006</a></u><br />
+				<u><a href="./ChristmasLights.html">Christmas Lights</a></u><br />
+				<u><a href="./JamesAtTheMariners.html">James' Mariners Game</a></u><br />
+				<u><a href="./RedmondSnow.html">Redmond Snow</a></u><br />
+				<u><a href="./WorkCalander.html">Team Calendar</a></u><br />
+			</span>
+		</div>
+		<div class="contentContainer">
+			<h2>Team Calendar</h2>
+			May 1999
+			<p />
+			Back in 1999 I was the development director for a software company called PWA. The people I worked with were amazing, we had a wonderful 7 years building a company up from 19 people to 180.
+			<p />
+			Anyway every couple of months we used to have a company meeting and each team used to present to the rest of the company. In development we were getting very board with the same old presentations from everyone each meeting and wanted to shake things up a bit.
+			<p />
+			At around the same time, the company had just commissioned a calendar to send out to customers that included some odd slogans that we were assured would resonate with our customers. We decided in development to do a parody of the calendar and incorporate the pictures into our company meeting presentation.
+			<p />
+			To help people get it we introduced each picture (modeled by one of the team) next to the original. Everyone fell about laughing, it was a huge success. Perhaps the most ironic surprise was the marketing company who made the original happened to attend the meeting. They too loved the images and wanted to do another version, but the management got scared and it never happened.
+			<p />
+			I remember we had a great time making this and when every I look at the pictures I can't help but smile - memories of happy times with a really great team.
+			<p />
+			<table width="650" border="0" cellpadding="0" cellspacing="0" align="center">
+				<tr>
+					<td align="left" width="380"><img id="IMG1" border="0" src="" width="300" height="225"></td>
+					<td align="right" width="380"><img id="IMG2" border="0" src="" width="300" height="225"></td>
+				</tr>
+			</table>
+			<table width="764" border="0" cellpadding="0" cellspacing="0" align="center">
+				<tr>
+					<td width="185" align="right">
+						<a href="javascript:ChangeImage('--');"><img src="./../Images/first-old.png" border="0" alt="First" width="17" height="13"></a>
+					</td>
+					<td width="40" align="center">
+						<a href="javascript:ChangeImage('-');"><img src="./../Images/prior-old.png" border="0" alt="Previous" width="17" height="13"></a>
+					</td>
+					<td width="160" align="center" valign="Top">
+						<span id="imgControl">&nbsp;</span>
+					</td>
+					<td width="40" align="center">
+						<a href="javascript:ChangeImage('+');"><img src="./../Images/next-old.png" border="0" alt="Next" width="17" height="13"></a>
+					</td>
+					<td width="185" align="left">
+						<a href="javascript:ChangeImage('++');"><img src="./../Images/last-old.png" border="0" alt="Last" width="17" height="13"></a>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="5"><span id="imgDetail">&nbsp;<span></td>
+				</tr>
+			</table>
+ 		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_photo").style.color = "#0b67d4";
+			document.getElementById("m_photofavs").style.background = "#e37e00";
+			updatePage("m_photo");
+		</script>
+	</div>
+</body>
+</html>

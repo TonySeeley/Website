@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../styles.css" media="all" />
+	<script type="text/javascript" src="./../menu.js"></script>
+	<script type="text/javascript" src="./tracking.js"></script>
+</head>
+<body onload="startup();">
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../menu.html"-->
+		</div>
+		<div class="contentContainerFull">
+			<h2>Meal Tracking</h2>
+			This page captures all the food I ate and exercise I carried out during my first 20 weeks on the diet.<p>
+			NOTE: I have currently only included Weeks 1-4 and weeks 19-20. (I hope to complete the other weeks soon)<p>
+			<h3>Date:&nbsp;<span id="Date"></span></h3>
+			<center>
+			<table>
+				<tr height="30">
+					<td width="93" align="center">&nbsp;
+					<td width="73" id="Day1" align="center" bgcolor="#000080" onmouseover="hightLightCell('Day1');" onmouseout="lowLightCell('Day1');" onclick="SelectDay('Day1');" style="cursor:hand;color:white">Tue
+					<td width="73" id="Day2" align="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Day2');" onmouseout="lowLightCell('Day2');" onclick="SelectDay('Day2');" style="cursor:hand">Wed
+					<td width="73" id="Day3" align="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Day3');" onmouseout="lowLightCell('Day3');" onclick="SelectDay('Day3');" style="cursor:hand">Thu
+					<td width="73" id="Day4" align="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Day4');" onmouseout="lowLightCell('Day4');" onclick="SelectDay('Day4');" style="cursor:hand">Fri
+					<td width="73" id="Day5" align="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Day5');" onmouseout="lowLightCell('Day5');" onclick="SelectDay('Day5');" style="cursor:hand">Sat
+					<td width="73" id="Day6" align="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Day6');" onmouseout="lowLightCell('Day6');" onclick="SelectDay('Day6');" style="cursor:hand">Sun
+					<td width="73" id="Day7" align="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Day7');" onmouseout="lowLightCell('Day7');" onclick="SelectDay('Day7');" style="cursor:hand">Mon
+				<tr height="5">
+					<td colspan="8">
+			</table>
+			<table>
+				<tr>
+					<td width="80" height="30" id="Week1" valign="center" bgcolor="#000080" onmouseover="hightLightCell('Week1');" onmouseout="lowLightCell('Week1');" onclick="SelectWeek('Week1');" style="cursor:hand;color:white">Week 1
+					<td rowspan="11" width="8">&nbsp;
+					<td rowspan="11" valign="top"><div id="Calendar">&nbsp;</div>
+					<td rowspan="11" width="8">&nbsp;
+					<td width="80" height="30" id="Week11" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week11');" onmouseout="lowLightCell('Week11');" onclick="SelectWeek('Week11');" style="cursor:hand">Week 11
+				<tr>
+					<td height="30" id="Week2" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week2');" onmouseout="lowLightCell('Week2');" onclick="SelectWeek('Week2');" style="cursor:hand">Week 2
+					<td height="30" id="Week12" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week12');" onmouseout="lowLightCell('Week12');" onclick="SelectWeek('Week12');" style="cursor:hand">Week 12
+				<tr>
+					<td height="30" id="Week3" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week3');" onmouseout="lowLightCell('Week3');" onclick="SelectWeek('Week3');" style="cursor:hand">Week 3
+					<td height="30" id="Week13" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week13');" onmouseout="lowLightCell('Week13');" onclick="SelectWeek('Week13');" style="cursor:hand">Week 13
+				<tr>
+					<td height="30" id="Week4" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week4');" onmouseout="lowLightCell('Week4');" onclick="SelectWeek('Week4');" style="cursor:hand">Week 4
+					<td height="30" id="Week14" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week14');" onmouseout="lowLightCell('Week14');" onclick="SelectWeek('Week14');" style="cursor:hand">Week 14
+				<tr>
+					<td height="30" id="Week5" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week5');" onmouseout="lowLightCell('Week5');" onclick="SelectWeek('Week5');" style="cursor:hand">Week 5
+					<td height="30" id="Week15" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week15');" onmouseout="lowLightCell('Week15');" onclick="SelectWeek('Week15');" style="cursor:hand">Week 15
+				<tr>
+					<td height="30" id="Week6" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week6');" onmouseout="lowLightCell('Week6');" onclick="SelectWeek('Week6');" style="cursor:hand">Week 6
+					<td height="30" id="Week16" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week16');" onmouseout="lowLightCell('Week16');" onclick="SelectWeek('Week16');" style="cursor:hand">Week 16
+				<tr>
+					<td height="30" id="Week7" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week7');" onmouseout="lowLightCell('Week7');" onclick="SelectWeek('Week7');" style="cursor:hand">Week 7
+					<td height="30" id="Week17" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week17');" onmouseout="lowLightCell('Week17');" onclick="SelectWeek('Week17');" style="cursor:hand">Week 17
+				<tr>
+					<td height="30" id="Week8" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week8');" onmouseout="lowLightCell('Week8');" onclick="SelectWeek('Week8');" style="cursor:hand">Week 8
+					<td height="30" id="Week18" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week18');" onmouseout="lowLightCell('Week18');" onclick="SelectWeek('Week18');" style="cursor:hand">Week 18
+				<tr>
+					<td height="30" id="Week9" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week9');" onmouseout="lowLightCell('Week9');" onclick="SelectWeek('Week9');" style="cursor:hand">Week 9
+					<td height="30" id="Week19" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week19');" onmouseout="lowLightCell('Week19');" onclick="SelectWeek('Week19');" style="cursor:hand">Week 19
+				<tr>
+					<td height="30" id="Week10" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week10');" onmouseout="lowLightCell('Week10');" onclick="SelectWeek('Week10');" style="cursor:hand">Week 10
+					<td height="30" id="Week20" valign="center" bgcolor="#80FFFF" onmouseover="hightLightCell('Week20');" onmouseout="lowLightCell('Week20');" onclick="SelectWeek('Week20');" style="cursor:hand">Week 20
+				<tr>
+					<td height="80" valign="center">&nbsp;
+			</table>
+			</center>
+		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_diet").style.color = "#0b67d4";
+			document.getElementById("m_dietmea").style.background = "#e37e00";
+			updatePage("m_diet");
+		</script>
+	</div>
+</body>
+</html>

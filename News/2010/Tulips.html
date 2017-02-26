@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../../styles.css" media="all" />
+	<script type="text/javascript" src="./../../menu.js"></script>
+	<script type="text/javascript" src="./../news.js"></script>
+	<script type="text/javascript">
+		function pageSetup()
+		{
+			maxImage = 53;
+			directory = "Tulips";
+		}
+	</script>
+</head>
+<body onload="pageLoad();" onscroll="pageScroll();" onresize="pageScroll();">
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../../menu.html"-->
+		</div>
+		<div class="sidebarContainer">
+			<h1 class="sideHeader">2010 News Stories</h1>
+			<span style="font:12px Verdana, serif; color:#0000F1;">
+				<u><a href="./Tulips.html">Skagit Valley Tulip Festival</a></u><br />
+				<u><a href="./Citizenship.html">Becoming a US Citizen</a></u><br />
+				<u><a href="./Photography.html">My New Hobby</a></u><br />
+			</span>
+		</div>
+		<div class="contentContainer" id="cdata" onmouseover="hidePics();">
+			<h2>Skagit Valley Tulip Festival</h2>
+			Sunday 11th April 2010
+			<p />
+			Skagit Valley is north of where we live about half way between us and Vancouver BC.  It's predominantly a farming community and probably wouldn't draw much attention if it wasn't for the crop it's known for.
+			<p />
+			What they grow in Skagit Valley is tulips!  Millions of tulips actually.  There are fields and fields of tulips of every color and on a nice day it's truly amazing to see.
+			<p />
+			Every year in spring the farms in the area have a tulip festival and open their doors to the general public (for a nice fee of course) and allow you to walk amongst the tulips and take pictures.
+			<p />
+			We went there a couple of years ago but it was a bit of a rainy day!  This time we were luckier.  We had a lovely warm sunny day with blue skies and white fluffy clouds and the tulips looked amazing.
+			<p />
+			Lisa, James, Abi and I headed out for the day to check it out.  James was his normal charming self, totally happy to be away from his Xbox, computer and girlfriend.  Actually that's a lie he complained the whole time.  But Lisa, Abi and I had a great time :-)
+			<p />
+			There were loads of people there and we spend most of our time trying to take pictures without getting people in the shot.  I got some lovely pictures on Abi who always likes getting in front of the camera.  Lisa not so much, apparently it was a bad hair day and she wouldn't take her hat off.  And James... Well he would only let me take his picture once, and he didn't even smile!
+			<p />
+			It's funny really, it took us about 90 minutes to get there, we were in the tulip fields for less than an hour and then we drove home.
+			<p />
+			But looking at the pictures I think it was worth it.  James doesn't agree.
+			<p />
+			The images above are a little small, you can check out bigger versions here: <a href=" http://gallery.me.com/tony.seeley#100405&bgcolor=black&view=grid" target="_blank">Skagit Valley Tulip Festival</a>.
+		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_news").style.color = "#0b67d4";
+			document.getElementById("m_news2010").style.background = "#e37e00";
+			updatePage("m_news");
+		</script>
+	</div>
+	<!--#include virtual="./../imageTable.html"-->
+</body>
+</html>

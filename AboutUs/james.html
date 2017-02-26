@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../styles.css" media="all" />
+	<script type="text/javascript" src="./../menu.js"></script>
+	<script type="text/javascript">
+		function calcAge(birthday)
+		{
+			var today = new Date();
+			var age = today.getFullYear() - birthday.getFullYear();
+			
+			if (today.getMonth() < birthday.getMonth() || (today.getMonth() == birthday.getMonth() && today.getDate() < birthday.getDate()))
+				return age - 1;
+			else 
+				return age;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../menu.html"-->
+		</div>
+		<div class="contentContainerFull">
+			<table>
+				<tr>
+					<td valign="top"><img src="./Images/james.jpg" width="200" height="200" border="0" style="margin-right: 10px;"><p />
+					Fullname: James Seeley<br />
+				  	Date of Birth: 20 August 1997<br />
+				  	Current Age: <script type="text/javascript">document.write(calcAge(new Date("Aug 20, 1997")));</script><br />
+				  	Place of Birth: Slough UK<br />
+				  	Hobbies: Any thing computer or gameish<br />
+					</td>
+					<td>I am <script type="text/javascript">document.write(calcAge(new Date("Aug 20, 1997")));</script> years old, and go to school at Evergreen Junior High in Redmond.<p />
+						I am a gaming fanatic and love to play my XBox 360 whenever I can. I also have a very cool PC and play games on that, oh and I play games on my iTouch (I told you I like games).  I am also learning to play the guitar at school but don't practice that much.<p />
+						While I do have a cell phone, I really don't get many calls - which is good because it may interfere with my game play time.<p />
+						<b>Favourite Things</b><br />
+						<ul>
+							<li>My awesome PC - LOVE THAT</li>
+							<li>TV</li>
+							<li>Bed - I LOVE MY BED</li>
+						</ul>
+						<b>Hobbies and Interests</b><br />
+						<ul>
+							<li>Chatting up "the ladies"...</li>
+							<li>Texting "the ladies"...</li>
+							<li>Working towards becoming the XBox world champion</li>
+							<li>Playing with my PC</li>
+							<li>Listening to music on my iTouch</li>
+							<li>Watching TV (Dad has introduced me to some really cool films)</li>
+							<li>Staying up late</li>
+							<li>Staying in bed till noon</li>
+							<li>Going "UGH" (just like Kevin) very loud whenever my mum or dad asked me to do ANYTHING</li>
+							<li>Going to school and doing my homework (joke)</li>
+						</ul>
+						<b>Favourite Quote</b><p />
+						Do'h - I hate you!
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_aboutus").style.color = "#0b67d4";
+			document.getElementById("m_james").style.background = "#e37e00";
+			updatePage("m_aboutus");
+		</script>
+	</div>
+</body>
+</html>

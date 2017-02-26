@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../styles.css" media="all" />
+	<script type="text/javascript" src="./../menu.js"></script>
+	<script type="text/javascript">
+		function calcAge(birthday)
+		{
+			var today = new Date();
+			var age = today.getFullYear() - birthday.getFullYear();
+			
+			if (today.getMonth() < birthday.getMonth() || (today.getMonth() == birthday.getMonth() && today.getDate() < birthday.getDate()))
+				return age - 1;
+			else 
+				return age;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../menu.html"-->
+		</div>
+		<div class="contentContainerFull">
+			<table>
+				<tr>
+					<td valign="top"><img src="./Images/roxie.jpg" width="200" height="200" border="0" style="margin-right: 10px;"><p />
+					Fullname: Roxie Seeley<br />
+				  	Date of Birth: April 19th 2008<br />
+				  	Current Age: <script type="text/javascript">document.write(calcAge(new Date("Apr 19, 2008")));</script> (<script type="text/javascript">document.write(7*calcAge(new Date("Apr 19, 2008")));</script>*)<br />
+				  	Place of Birth: Redmond US<br />
+				  	Hobbies: Licking<br />
+				  	* Doggie Years<br />
+					</td>
+					<td>My name is Roxie and I'm a dog.  I like to laze around all day and play with James and Abi.  When I am good, they give me a nice chew to eat, when I am naughty they lock me in my cage.  I don't get many chews :-(<p />
+						I HATE those horrid furry things that visit my garden.  They look at me and it drives me nuts.  When I catch one I'm gonna eat it (unlikely).<p />
+						<b>Favourite Things</b><br />
+						<ul>
+							<li>Sqeaky Toys</li>
+							<li>Moose (Toy)</li>
+							<li>Food (Human - not dog)</li>
+							<li>Smelly feet</li>
+							<li>Bed time</li>
+						</ul>
+						<b>Hobbies and Interests</b><br />
+						<ul>
+							<li>Peeing on the floor when Tony isn't looking</li>
+							<li>Licking James smelly feet</li>
+							<li>Licking Tony's face</li>
+							<li>Chasing Squirrels</li>
+							<li>Cuddling with the family</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_aboutus").style.color = "#0b67d4";
+			document.getElementById("m_roxie").style.background = "#e37e00";
+			updatePage("m_aboutus");
+		</script>
+	</div>
+</body>
+</html>

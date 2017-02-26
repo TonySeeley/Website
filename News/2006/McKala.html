@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../../styles.css" media="all" />
+	<script type="text/javascript" src="./../../menu.js"></script>
+	<script type="text/javascript">
+		var maxImage1;
+		var maxImage2;
+		var directory1;
+		var directory2;
+		var currentImage1;
+		var currentImage2;
+
+		function pageLoad()
+		{
+			maxImage1 = 17;
+			maxImage2 = 17;
+			directory1 = "McKala-Family";
+			directory2 = "McKala-Breeder";
+
+			var Selector1 = '<select id="caption1-2" onChange="javascript:ChangeImage('+"''"+', 1);">';
+			for (var i = 1; i <= maxImage1; i++) {
+				Selector1 += '<option value="'+i.toString()+'" >Picture '+i.toString()+' of '+maxImage1.toString()
+			}
+			Selector1 += "<"+"/select>";
+			document.getElementById("caption1-1").innerHTML = Selector1;
+
+			currentImage1 = 1;
+			ChangeImage("--", 1);
+
+			var Selector2 = '<select id="caption2-2" onChange="javascript:ChangeImage('+"''"+', 2);">';
+			for (var i = 1; i <= maxImage2; i++) {
+				Selector2 += '<option value="'+i.toString()+'" >Picture '+i.toString()+' of '+maxImage2.toString()
+			}
+			Selector2 += "<"+"/select>";
+			document.getElementById("caption2-1").innerHTML = Selector2;
+
+			currentImage2 = 1;
+			ChangeImage("--", 2);
+		}
+
+		function ChangeImage(param, img)
+		{
+			if (img==1)
+			{
+				switch (param)
+				{
+					case "+":
+						currentImage1++;
+						if (currentImage1>maxImage1)
+							currentImage1=1;
+						break;
+					case "-":
+						currentImage1--;
+						if (currentImage1==0)
+							currentImage1=maxImage1;
+						break;
+					case "++":
+						currentImage1=maxImage1;
+						break;
+					case "--":
+						currentImage1=1;
+						break;
+				}
+
+				if (param=="")
+					currentImage1 = parseInt(document.getElementById("caption1-2").value, 10);
+				else
+					document.getElementById("caption1-2").value = currentImage1.toString();
+
+				var imageNumber = "000".substring(0, 3-currentImage1.toString().length) + currentImage1.toString();
+				document.getElementById("IMG1").src=directory1+"/Image"+imageNumber+".jpg"
+			}
+			else
+			{
+				switch (param)
+				{
+					case "+":
+						currentImage2++;
+						if (currentImage2>maxImage2)
+							currentImage2=1;
+						break;
+					case "-":
+						currentImage2--;
+						if (currentImage2==0)
+							currentImage2=maxImage2;
+						break;
+					case "++":
+						currentImage2=maxImage2;
+						break;
+					case "--":
+						currentImage2=1;
+						break;
+				}
+
+				if (param=="")
+					currentImage2 = parseInt(document.getElementById("caption2-2").value, 10);
+				else
+					document.getElementById("caption2-2").value = currentImage2.toString();
+
+				var imageNumber = "000".substring(0, 3-currentImage2.toString().length) + currentImage2.toString();
+				document.getElementById("IMG2").src=directory2+"/Image"+imageNumber+".jpg"
+			}
+		}
+	</script>
+</head>
+<body onload="pageLoad();">
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../../menu.html"-->
+		</div>
+		<div class="sidebarContainer">
+			<h1 class="sideHeader">2006 News Stories</h1>
+			<span style="font:12px Verdana, serif; color:#0000F1;">
+				<u><a href="./NewCars.html">New Cars</a></u><br />
+				<u><a href="./MexicanVacation.html">Mexican Vacation</a></u><br />
+				<u><a href="./McKala.html">McKala</a></u><br />
+				<u><a href="./SanDiegoZoo.html">San Diego Zoo</a></u><br />
+				<u><a href="./SeaWorld.html">Sea World</a></u><br />
+				<u><a href="./LegolandUSA.html">Legoland USA</a></u><br />
+			</span>
+		</div>
+		<div class="contentContainer" id="cdata">
+			<table>
+				<tr>
+					<td>
+						<h2 style="padding-top:12px;">McKala</h2>
+						Friday 24th March 2006
+						<p />
+						I have wanted a dog for ages and to get my way I have been working on James and Abi for some time to try and convince Lisa it is a good idea.
+						<p />
+						Well for a long time she was having none of it and stood firm - no pets.
+						<p />
+						Her argument was that when we had Rosie, she was the one who always looked after her and I did nothing.  Lisa fed her, took her for walks and played with her etc., etc. yawn.
+						<p />
+						Anyway she also didn't want one because as we are always out or away it would be unfair for the dog.  Plus it would negatively affect our new lifestyle with our new friends (days out, parties round each others house etc.)
+						<p />
+						I tried to point out to her several times that I had changed both physically and mentally since we had Rosie (was fitter and had grown up after having two kids), and the fact that two out of our four best friends also had dogs and they didn't seem to suffer, but she still wouldn't budge.
+						<p />
+						James was no use either, one week he wanted a mouse, the next a hamster, then a rabbit, but I saw a trend, the pets were getting bigger!
+						<p />
+						So I bided my time and slowly and surely got her to think about it.
+						<p />
+						Then we all went away to San Diego and Abi fell in love with the dogs at the Pets Rule show at Sea World.
+						<p />
+						James too, I could see was starting to see a dog would make a great friend - even though it couldn't hold a Game Cube controller.
+						<p />
+						So while walking round Sea World I tried again.
+						<p />
+					</td>
+					<td valign="top">
+						<table width="300" id="TabImg1" style="background-color:white;border:2px solid #666666;" cellpadding="0" cellspacing="0">
+						  <tr>
+							<td align="center" colspan="5">MaKala & Seeley Family
+						  <tr id="row1-1">
+							<td align="center" colspan="5">
+								<img id="IMG1" border="0" src="" width="300" height="225">
+						  <tr id="row1-2">
+							<td width="40" align="right">
+								<a href="javascript:ChangeImage('--', 1);"><img src="./../../Images/first-old.png" border="0" alt="First" width="17" height="13"></a>
+							<td width="40" align="center">
+								<a href="javascript:ChangeImage('-', 1);"><img src="./../../Images/prior-old.png" border="0" alt="Previous" width="17" height="13"></a>
+							<td width="140" align="center" valign="Top">
+								<span id="caption1-1">&nbsp;</span>
+							<td width="40" align="center">
+								<a href="javascript:ChangeImage('+', 1);"><img src="./../../Images/next-old.png" border="0" alt="Next" width="17" height="13"></a>
+							<td width="40" align="left">
+								<a href="javascript:ChangeImage('++', 1);"><img src="./../../Images/last-old.png" border="0" alt="Last" width="17" height="13"></a>
+						</table>
+						<p>
+						<table width="300" id="TabImg2" style="background-color:white;border:2px solid #666666;" cellpadding="0" cellspacing="0">
+						  <tr>
+							<td align="center" colspan="5">MaKala, Lilly (Mum) & Brothers & Sisters
+						  <tr id="row2-1">
+							<td align="center" colspan="5">
+								<img id="IMG2" border="0" src="" width="300" height="225">
+						  <tr id="row2-2">
+							<td width="40" align="right">
+								<a href="javascript:ChangeImage('--');"><img src="./../../Images/first-old.png" border="0" alt="First" width="17" height="13"></a>
+							<td width="40" align="center">
+								<a href="javascript:ChangeImage('-');"><img src="./../../Images/prior-old.png" border="0" alt="Previous" width="17" height="13"></a>
+							<td width="140" align="center" valign="Top">
+								<span id="caption2-1">&nbsp;</span>
+							<td width="40" align="center">
+								<a href="javascript:ChangeImage('+');"><img src="./../../Images/next-old.png" border="0" alt="Next" width="17" height="13"></a>
+							<td width="40" align="left">
+								<a href="javascript:ChangeImage('++');"><img src="./../../Images/last-old.png" border="0" alt="Last" width="17" height="13"></a>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						"Don't you think the kids should have a pet?  I mean Abi is a little scared of dogs and that's not that healthy.  She really should have a pet.  Don't you think?"
+						<p />
+						Then I got a "Maybe" :-)
+						<p />
+						Well that was all I needed. In two more days we were picking breeds.
+						<p />
+						By the time we got back she was asking me to find a breeder.
+						<p />
+						I wanted a Westie again so found a lovely lady who had some puppies and we agreed to go and see them - with no commitment to buy.
+						<p />
+						Before we got to go we decided to go to the Seattle dog show, where Lisa was like a kid in a handbag shop.
+						<p />
+						She loved it.  As did James and Abi too (if you class Abi clinging to my neck and restricting my breathing!)
+						<p />
+						We saw at the show the Westie lady and the mother of the pups we were going to see the following week.
+						<p />
+						But Lisa found something she liked more.
+						<p />
+						A Cairn Terrier.  Just think Toto from The Wizard Of Oz.
+						<p />
+						Lisa thought these were lovely, what helped was while walking round we met a lovely lady called Becky who had four puppies with her.
+						<p />
+						They were beautiful, very funny to watch and Lisa and James fell in love.
+						<p />
+						On the way home I was given instructions to find a Cairn.  I sent off loads of emails but got very little back.  It appeared Lisa had fallen for a rare breed in the Pacific North West.
+						<p />
+						Never mind I thought, wait till she sees the Westies.
+						<p />
+						The next week we went to see the Westie pups and they were adorable.  Abi at first was a little scared, but after half an hour was sitting in a chair with a pup on her lap, saying "I want this one, no, that one".
+						<p />
+						So we headed home thinking in a few weeks we could have a new Westie puppy.
+						<p />
+						Two days later I received an email from Becky from the dog show.  One of the pups we had seen was available and she was a girl too.
+						<p />
+						Apparently Becky was keeping some of the puppies herself to show, but had been told one of the puppies, (although beautiful) had a shorter neck and lower shoulders than desired.  As a result she reluctantly decided to let her go.
+						<p />
+						So what do you think was Lisa's reaction?
+						<p />
+						Off we go to Pet Smart and spend $350.00 on EVERYTHING.
+						<p />
+						Three days later, I took the day off work and we are driving the 80 miles to Becky's to see the little dog - again no commitment if we didn't want her.
+						<p />
+						Fat chance of that! :-)
+						<p />
+						McKala was four months old and just beautiful.  Very gentle and clearly had a lovely temperament.
+						<p />
+						James, Abi and Lisa had decided this was our dog.
+						<p />
+						Although we had discussed it with Becky, we had not told the kids we could take her home, so that was a major surprise.
+						<p />
+						So last Friday McKala came home with us.  Lying on the back seat of the car, head on James' lap, she traveled the 80 miles without incident.
+						<p />
+						We then had a fun weekend taking her to James' ball game and talking walks round the neighborhood.
+						<p />
+						She is currently crate trained (which means she sleeps in a crate at night without making a mess), then I get up in the morning at take her out for walkies.
+						<p />
+						House training will take a few weeks so at the moment we follow her around the house ready to pounce if she makes a mess.
+						<p />
+						She also has a little diaper that she wears which catches any pee.
+						<p />
+						Today is Tuesday and I have taken her for a morning and evening walk each day.  Lisa takes her out in the middle of the day and the kids just love her.
+						<p />
+						I loaded up two sets of pictures of her above.
+						<p />
+						The top pictures of her were taken by us over the last few days.
+						<p />
+						The ones below were given to us by Becky and are in fact McKala with her family and mum Lilly.
+						<p />
+						So McKala - Welcome to the family.
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_news").style.color = "#0b67d4";
+			document.getElementById("m_news2006").style.background = "#e37e00";
+			updatePage("m_news");
+		</script>
+	</div>
+</body>
+</html>

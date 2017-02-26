@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="6"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	title="General Images"
+	showDownloadButton="true"
+	showNavButtons="true"
+	showAutoPlayButton="true"
+	floatButtonBar="false"
+	buttonBarScale="1"
+	titleTextAlignment="CENTER"
+	titleDropShadow="false"
+	showBackButton="true"
+	backButtonURL="/Gallery/Gallery.html"
+
+>
+  <image imageURL="images/Image002.jpg"
+	thumbURL="thumbs/Image002.jpg"
+	linkURL="images/Image002.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image001.jpg"
+	thumbURL="thumbs/Image001.jpg"
+	linkURL="images/Image001.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image003.jpg"
+	thumbURL="thumbs/Image003.jpg"
+	linkURL="images/Image003.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image004.jpg"
+	thumbURL="thumbs/Image004.jpg"
+	linkURL="images/Image004.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image005.jpg"
+	thumbURL="thumbs/Image005.jpg"
+	linkURL="images/Image005.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image006.jpg"
+	thumbURL="thumbs/Image006.jpg"
+	linkURL="images/Image006.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/Image007.jpg"
+	thumbURL="thumbs/Image007.jpg"
+	linkURL="images/Image007.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

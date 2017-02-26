@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../styles.css" media="all" />
+	<script type="text/javascript" src="./../menu.js"></script>
+	<style type="text/css">
+		.calcHeader  {font-weight: bold; font-size: 16px; text-align:center;}
+		.calcHeader2 {text-decoration: underline; font-size: 12px;}
+	</style>
+	<script type="text/javascript">
+		function compute()
+		{
+			var bmr;
+			var bmi;
+			var cals;
+			var fats;
+			var exercise;
+			var gender;
+	
+			if (isNaN(parseInt(document.calculator.weight.value,10)))
+			{
+				alert("Please enter a number for your weight");
+				return;
+			}
+			if (isNaN(parseInt(document.calculator.age.value,10)))
+			{
+				alert("Please enter a number for your age");
+				return;
+			}
+			if (isNaN(parseInt(document.calculator.avecal.value,10)))
+			{
+				alert("Please enter an average calories burnt when exercising");
+				return;
+			}
+			gender = document.calculator.gender.value;
+			if (gender=="F")
+				bmr = 665 + (9.6 * parseInt(document.calculator.weight.value,10)/2.2) + (5 * (parseInt(document.calculator.heightfeet.value,10)*12+parseInt(document.calculator.heightinches.value,10)) * 1.7) - (4.7 * parseInt(document.calculator.age.value,10));
+			else
+				bmr = 66 + (13.7 * parseInt(document.calculator.weight.value,10)/2.2) + (5 * (parseInt(document.calculator.heightfeet.value,10)*12+parseInt(document.calculator.heightinches.value,10)) * 2.54) - (6.8 * parseInt(document.calculator.age.value,10));
+			bmr = parseInt(bmr.toString(10),10)
+	
+			bmi = 703 * parseInt(document.calculator.weight.value,10) / ((parseInt(document.calculator.heightfeet.value,10)*12+parseInt(document.calculator.heightinches.value,10)) * (parseInt(document.calculator.heightfeet.value,10)*12+parseInt(document.calculator.heightinches.value,10)));
+			bmi = bmi * 100;
+			bmi = parseInt(bmi.toString(10),10) / 100;
+	
+			exercise = parseInt(document.calculator.exercise.value,10) * parseInt(document.calculator.avecal.value,10);
+			document.calculator.dailybmr.value = bmr;
+			document.calculator.weeklybmr.value = bmr * 7;
+			document.calculator.weeklycalsburnt.value = exercise;
+			cals = ((bmr * 7) + exercise) / 7;
+			cals = parseInt(cals.toString(10),10);
+			fats = (cals * 0.25) / 9;
+			fats = parseInt(fats.toString(10),10);
+			document.calculator.calsmaint.value = cals;
+			document.calculator.fatmaint.value = fats;
+	
+			cals = cals - 500;
+			if (gender=="F")
+			{
+				if (cals > 1650)
+				{
+					document.getElementById("msg1").innerHTML="*";
+					document.getElementById("msg2").innerHTML="<br>* The actual calculated daily caloric intake was : "+cals+"<br>However this has been reduced to 1650 (safe minimum)";
+					cals = 1650;
+				}
+				else
+				{
+					document.getElementById("msg1").innerHTML="&nbsp;";
+					document.getElementById("msg2").innerHTML="&nbsp;";
+				}
+			}
+			else
+			{
+				if (cals > 1850) {
+					document.getElementById("msg1").innerHTML="*";
+					document.getElementById("msg2").innerHTML="<br>* The actual calculated daily caloric intake was : "+cals+"<br>However this has been reduced to 1850 (safe minimum)";
+					cals = 1850;
+	
+				}
+				else {
+					document.getElementById("msg1").innerHTML="&nbsp;";
+					document.getElementById("msg2").innerHTML="&nbsp;";
+				}
+			}
+			fats = (cals * 0.25) / 9;
+			fats = parseInt(fats.toString(10),10);
+			document.calculator.calsloose.value = cals;
+			document.calculator.fatloose.value = fats;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../menu.html"-->
+		</div>
+		<div class="contentContainerFull">
+			<h2>What Food, When To Eat & How Much?</h2>
+			<table>
+				<tr>
+					<td>
+						OK, so you now have all this information on protein, fats and carbohydrates.
+						<p />
+						How do you know what to eat, when to eat it and how much?
+						<p />
+						The "how much" is easy, the "when" is not too hard either but the "what" is a little more complex and can require the "black art" of understanding nutrition labels.
+						<p />
+						Lets start with how much.
+						<p />
+						<h3>How Much?</h3>
+						Before you can decide how much you can eat, you need to know how many calories you burn in a day by doing nothing.
+						<p />
+						Once you know this value, you just ensure you eat less and you loose weight. <i>Easy :-)</i>.
+						<p />
+						Of course the amount of exercise you do will also affect your ideal calorie intake but this is a good start.
+						<p />
+						So how do you know how many calories you burn by doing nothing?  Well luckily there is a formula for this and it calculates your basal metabolic rate.
+						<p />
+						Your basal metabolic rate, or BMR, is the minimum calorific requirement needed to sustain life in a resting individual. It can be looked at as being the amount of energy (measured in calories) expended by the body to remain in bed asleep all day!
+						<p />
+						To make it easy I have included here a small calculator that based on your gender, weight, height and age, determines your BMR.
+						<p />
+						The calculator also takes into consideration how much exercise you do and suggests a maintenance calorie intake and a weight loss calorie intake.
+						<br>
+						In addition the calculator works out the number of grams of fat you can have each day.
+						<p />
+						It is worth noting that to determine the number of calories you should consume in a day to loose weight, the calculator simply deducts 500 from your BMR plus exercise amount.
+						<p />
+						The calculator also sets a maximum weight loss calories amount of 1650 calories for a woman and 1850 calories for a man. As a result if you are very heavy you will loose weight quicker at the beginning of your diet.
+						<p />
+					</td>
+					<td width="360" valign="top">
+						<form name="calculator">
+							<table style="border:1px solid #666666;">
+								<tr>
+									<th class="calcHeader" colspan="2">Calorie Calculator<p>
+								<tr>
+									<td>Gender
+									<td><select name="gender" size="1"><option value="F">Female</option><option value="M">Male</option></select>
+								<tr>
+									<td>Height
+									<td><select name="heightfeet"><option value="4">4' </option><option value="5">5' </option><option value="6">6' </option><option value="7">7' </option></select> <select name="heightinches"><option value="0">0" </option><option value="1">1" </option><option value="2">2" </option><option value="3">3" </option><option value="4">4" </option><option value="5">5" </option><option value="6">6" </option><option value="7">7" </option><option value="8">8" </option><option value="9">9" </option><option value="10">10" </option><option value="11">11" </option></select>
+								<tr>
+									<td>Weight
+									<td><input name="weight" type="text" size="4"> (pounds)
+								<tr>
+									<td>Age
+									<td><input name="age" type="text" size="4">
+								<tr>
+									<td>Exercise Frequency
+									<td><select name="exercise" size="1"><option value="1">Once a week</option><option value="2">Twice a week</option><option value="3">Three times a week</option><option value="4">Four times a week</option><option value="5">Five times a week</option><option value="6">Six times a week</option><option value="7">Seven times a week</option></select>
+								<tr>
+									<td>Average Calories Burnt
+									<td><input name="avecal" type="text" size="4"> (each exercise session)
+								<tr>
+									<td colspan="2" align="center"><hr>
+								<tr>
+									<td colspan="2" align="center"><a href="javascript: compute();"><img src="./Images/calculate.gif" border="0" alt="Calculate" /></a><br />
+								<tr>
+									<td colspan="2" align="center"><hr>
+								<tr>
+									<td>Daily BMR
+									<td><input name="dailybmr" type="text" size="4">
+								<tr>
+									<td>Weekly BMR
+									<td><input name="weeklybmr" type="text" size="4">
+								<tr>
+									<td>Weekly Calories Burnt
+									<td><input name="weeklycalsburnt" type="text" size="4"> (through exercise)
+								<tr>
+									<td colspan="2" align="center"><hr>
+								<tr>
+									<td class="calcHeader2" colspan="2">To Maintain Weight
+								<tr>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;Daily Calories
+									<td><input name="calsmaint" type="text" size="4">
+								<tr>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;Daily Fat
+									<td><input name="fatmaint" type="text" size="4"> (grams)
+								<tr>
+									<td class="calcHeader2" colspan="2">To loose Weight
+								<tr>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;Daily Calories
+									<td><input name="calsloose" type="text" size="4"> <span id="msg1">&nbsp;</span>
+								<tr>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;Daily Fat
+									<td><input name="fatloose" type="text" size="4"> (grams)
+								<tr>
+									<td colspan="2"><span id="msg2">&nbsp;</span>
+							</table>
+						</form>
+					</tb>
+				</tr>
+				<tr>
+					<td colspan="2">
+						I should point out that everyone is different and the figures provided by the calculator are just a suggestion.
+						<p />
+						I personally use the following figures for myself:
+						<br>
+						<ul>
+							<li>If I'm not exercising and want to loose weight it's 1500 calories a day</li>
+							<li>If I'm exercising and want to loose weight it's 1850 calories a day</li>
+							<li>If I'm not exercising and want to maintain weight it's 1850 calories a day</li>
+							<li>If I'm exercising and want to maintain weight it's 2200 calories a day</li>
+						</ul>
+						(I'm assuming you are reading this site as you want to loose weight, well the next assumption is that you are exercising regularly (see the link on exercise for reasons why).  The starting recommendation from the 20/20 program was 1560 calories for men and 1255 calories for women.)
+						<p />
+						OK so that's the how much out of the way, now lets work on the when.
+						<p />
+						<h3>When to Eat?</h3>
+						To start you need to plan you meals through the day - yes I said plan, this requires some effort here and forward thinking.
+						<p />
+						You also want to try and ensure you don't go more than 4 hours between meals, remember 3 meals a day and 2 snacks.  Finally you shouldn't eat too late, you don't want an active metabolism while you sleep, you won't burn as much fat.  I try to make sure I don't eat after 9pm (and I'm up till midnight most nights).
+						<p />
+						Spread you calories across each meal, I tend to aim for 400 calories for breakfast and lunch, 200 for each snack and what ever is left for dinner.  (Women should obviously drop these figures a little).
+						<p />
+						My daily routine is Breakfast at 8am, Lunch at 12 noon, Snack 1 at 3pm, Dinner at 7pm and Snack 2 at 9pm.  But that's just me.
+						<p />
+						So now you need to decide on the "What".
+						<p />
+						<h3>What to Eat?</h3>
+						Firstly you are going to break each major meal (not snack) up into 33% Protein, 33% Fruit or Vegetables and 33% Carbohydrates.
+						<p />
+						Yes I know that Fruit and Vegetables are carbohydrates but they tend to have a low glycemic index, so the 20/20 Lifestyles program treats them differently.  When they say Carbohydrates they mean higher (or high) glycemic foods.
+						<p />
+						I don't know about you, but nutrition labels have always confused the hell out of me!
+						<p />
+						I mean they contain so much information and I never know what to take note of or how to determine if the food is good or bad for you.
+						<p />
+						In the past I just assumed if the calorie count was very high the food was bad.  However, since the 20/20 program I have learn a lot more.
+						<p />
+						The following are lessons learnt from the program that guide you through making better choices.
+						<p />
+						<ol>
+							<li>Count your calories and grams of fat throughout the day and write down everything you eat.  YES Everything, you will be amazed how easy it is to go over your daily calorie/fat allowance.  (Work out the number of servings you have and multiply that by the calories per serving and fat grams per serving to get your figures).</li>
+							<li>Look at the nutrition label or ingredients and pick foods that have good fats rather than bad ones, E.g. no saturated fats only unsaturated fats.</li>
+							<li>Look at ingredients and pick foods that have natural ingredients rather than refined ones. E.g. Fruit juice concentrate in yogurt rather than fructose or corn syrup.</li>
+							<li>For grains (breads, cereals etc.) use the rule of threes.
+							Ensure each grain serving has 3 or more grams of fiber and 3 or less grams of sugar. (A grain serving is usually around 100 calories).</li>
+						</ol>
+						If you stick to these rules you wont go far wrong and will eat a balanced diet that is protein rich, low in high glycemic carbohydrates, contains only good fats and within your daily allowance.
+						<p />
+						Oh yeah and if you get the calorie amount right you will lose weight.
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_diet").style.color = "#0b67d4";
+			document.getElementById("m_dietfoo").style.background = "#e37e00";
+			document.getElementById("m_dietwhe").style.background = "#e37e00";
+			updatePage("m_diet");
+		</script>
+	</div>
+</body>
+</html>

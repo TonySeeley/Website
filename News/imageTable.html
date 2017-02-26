@@ -1,0 +1,16 @@
+<table class="imgTable" id="imageTable" cellpadding="0" cellspacing="0" onmouseover="showPics();">
+		<tr>
+			<td class="imgHeader" id="imageHeader" colspan="6">Mouse Over to Show</td>
+		</tr>
+		<tr class="imgRowTR" id="imageRow">
+			<td class="imgRowTD" colspan="6"><img class="imgImage" id="image" src="" ></td>
+		</tr>
+		<tr class="imgControlRowTR" id="imageControlRow">
+			<td class="imgStatus" id="imageStatus">Slideshow Off</td>
+			<td class="imgControlRowTD"><a href="javascript:ChangeImage('<');"><img class="imgControl" src="./../../Images/Last.png" /></a></td>
+			<td class="imgControlRowTD"><a href="javascript:runSlideShow(false);"><img class="imgControl" id="imagePause" src="./../../Images/Pause-disabled.png" /></a></td>
+			<td class="imgControlRowTD"><a href="javascript:runSlideShow(true);"><img class="imgControl" id="imagePlay" src="./../../Images/Play.png" /></a></td>
+			<td class="imgControlRowTD"><a href="javascript:ChangeImage('>');"><img class="imgControl" src="./../../Images/Next.png" /></a></td>
+			<td class="imgCount" id="imageNumber">&nbsp;</td>
+		</tr>
+	</table>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../styles.css" media="all" />
+	<script type="text/javascript" src="./../menu.js"></script>
+	<script type="text/javascript">
+		function calcAge(birthday)
+		{
+			var today = new Date();
+			var age = today.getFullYear() - birthday.getFullYear();
+			
+			if (today.getMonth() < birthday.getMonth() || (today.getMonth() == birthday.getMonth() && today.getDate() < birthday.getDate()))
+				return age - 1;
+			else 
+				return age;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../menu.html"-->
+		</div>
+		<div class="contentContainerFull">
+			<table>
+				<tr>
+					<td valign="top"><img src="./Images/abi.jpg" width="200" height="200" border="0" style="margin-right: 10px;"><p />
+					Fullname: Abi Seeley<br />
+				  	Date of Birth: 7 May 2003<br />
+				  	Current Age: <script type="text/javascript">document.write(calcAge(new Date("May 7, 2003")));</script><br />
+				  	Place of Birth: Bellevue US<br />
+				  	Hobbies: Talking<br />
+					</td>
+					<td>My name is Abi and I like to talk, a lot. I love my brother very much and like to annoy him whenever I can.<p />
+						I enjoy going shopping with my mummy and spending time with daddy too.<p />
+						I am very pretty and like to dress up and wear pretty makeup.<p />
+						One of my favorite games is "house" when I'm the mummy and tell everyone what to do.<p />
+						<b>Favourite Things</b><br />
+						<ul>
+							<li>Cheer</li>
+							<li>School</li>
+							<li>My Friends</li>
+							<li>Roxie</li>
+							<li>TV</li>
+						</ul>
+						<b>Hobbies and Interests</b><br />
+						<ul>
+							<li>Talking</li>
+							<li>Reading/Writing/Drawing</li>
+							<li>Tooting (farting)</li>
+							<li>Watching TV (iCarly/Sponge Bob/Hanna Montana)</li>
+						</ul>
+						<br />&nbsp;
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_aboutus").style.color = "#0b67d4";
+			document.getElementById("m_abi").style.background = "#e37e00";
+			updatePage("m_aboutus");
+		</script>
+	</div>
+</body>
+</html>

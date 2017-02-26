@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>The Seeley Family Web Site</title>
+	<link rel="stylesheet" type="text/css" href="./../../styles.css" media="all" />
+	<script type="text/javascript" src="./../../menu.js"></script>
+	<script type="text/javascript" src="./../news.js"></script>
+	<script type="text/javascript">
+
+		function pageSetup()
+
+		{
+			maxImage = 13;
+			directory = "NightSpaceNeedle";
+		}
+	</script>
+</head>
+<body onload="pageLoad();" onscroll="pageScroll();" onresize="pageScroll();">
+	<div class="container">
+		<div class="pageHeader">
+			<h1>The Seeley Family Web Site</h1>
+			<h2>www.seeleyonline.com</h2>
+		</div>
+		<div class="subHeader">
+			<table width="100%">
+				<tr>
+					<td class="subHeaderLeft" id="strapline">&nbsp;</td>
+					<td class="subHeaderRight" id="updated">&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="navcontainer">
+			<!--#include virtual="./../../menu.html"-->
+		</div>
+		<div class="sidebarContainer">
+			<h1 class="sideHeader">2004 News Stories</h1>
+			<span style="font:12px Verdana, serif; color:#0000F1;">
+				<u><a href="./NightSpaceNeedle.html">Night Space Needle</a></u><br />
+				<u><a href="./HarleyDavidson.html">Harley Davidson</a></u><br />
+				<u><a href="./VictoriaTrip.html">Victoria Trip</a></u><br />
+				<u><a href="./SpiritOfWashington.html">Spirit Of Washington</a></u><br />
+				<u><a href="./LindaParty.html">Linda's Party</a></u><br />
+				<u><a href="./AmayaParty.html">Amaya's Party</a></u><br />
+				<u><a href="./MarinersDay.html">Mariners Day</a></u><br />
+				<u><a href="./PineWoodDerby.html">Pinewood Derby</a></u><br />
+			</span>
+		</div>
+		<div class="contentContainer" id="cdata" onmouseover="hidePics();">
+			<h2>A Night at the Space Needle</h2>
+			Sunday 22nd February 2004
+			<p />
+			One thing Lisa and I have wanted to do was visit the Space Needle at night.
+			<p />
+			Again with Nikki and the boys visiting we thought this would be a fun thing to do.  As a result we went downtown on their last night to see what Seattle would look like at night time.
+			<p />
+			We had a bad time trying to park but managed to get up the needle in time to see the sun set.
+			<p />
+			It was really beautiful, and although I got some nice pictures I don't think they really captured the amazing view.
+			<p />
+			It was a pretty clear night so we could see for miles and the lit up city looked magnificent.
+			<p />
+			I would have liked to have stayed up there longer but the boys were tired and starting to act up so after 40 minutes or so we headed for home.
+			<p />
+			I really recommend that if you haven't done this, you should go for it.  You won't be disappointed.
+		</div>
+	</div>
+	<div class="footer">
+		<p id="footer">&nbsp;</p>
+		<script type="text/javascript">
+			document.getElementById("m_news").style.color = "#0b67d4";
+			document.getElementById("m_news2004").style.background = "#e37e00";
+			updatePage("m_news");
+		</script>
+	</div>
+	<!--#include virtual="./../imageTable.html"-->
+</body>
+</html>
